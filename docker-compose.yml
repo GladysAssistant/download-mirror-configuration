@@ -19,9 +19,9 @@ services:
   static-nginx:
     image: nginx:alpine
     environment:
-      - VIRTUAL_HOST=mirror-fr-1.gladysproject.com
-      - LETSENCRYPT_HOST=mirror-fr-1.gladysproject.com
-      - LETSENCRYPT_EMAIL=hello@gladysproject.com
+      - VIRTUAL_HOST=mirror-fr-2.gladysassistant.com
+      - LETSENCRYPT_HOST=mirror-fr-2.gladysassistant.com
+      - LETSENCRYPT_EMAIL=hello@gladysassistant.com
     volumes:
       - ./files:/usr/share/nginx/html:ro
       - "./conf/default.conf:/etc/nginx/default.conf:ro"
